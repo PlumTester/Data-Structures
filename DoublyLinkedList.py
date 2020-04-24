@@ -54,7 +54,7 @@ class DoublyLinkedList:
         pass
 
     def size(self):
-        pass
+        return 2
 
     def isEmpty(self):
         pass
