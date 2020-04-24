@@ -2,24 +2,24 @@
 class Node:
 
     def __init__(self, element):
-        print("creating new node with element {0}".format(element))
+        # print("creating new node with element {0}".format(element))
         self.__element = element
         self.__next = None
         self.__prev = None
 
     def __del__(self):
+        pass
+        # e = self.__element
+        # n = "None"
+        # p = "None"
 
-        e = self.__element
-        n = "None"
-        p = "None"
-
-        if self.__next != None:
-            n = self.__next.__element
+        # if self.__next != None:
+        #     n = self.__next.__element
         
-        if self.__prev != None:
-            p = self.__prev.__element
+        # if self.__prev != None:
+        #     p = self.__prev.__element
         
-        print("deleting node with element {0}, next {1}, and prev {2}".format(e, n, p))
+        # print("deleting node with element {0}, next {1}, and prev {2}".format(e, n, p))
 
     def __str__(self):
         pass
@@ -66,7 +66,7 @@ class DoublyLinkedList:
         else:
             
             node = self.__head.getNext()
-            output = str(node.getElement()) + "" 
+            output =  "[" + str(node.getElement()) 
 
             node = node.getNext()
 
@@ -74,7 +74,7 @@ class DoublyLinkedList:
                 output += ", " + str(node.getElement())
                 node = node.getNext()
 
-            return output
+            return output + "]"
 
 
     def size(self):
@@ -157,7 +157,7 @@ class DoublyLinkedList:
     def setElement(self, eRef, element):
         if not self.isEmpty():
 
-            nodeRef = self.__findNode(element)
+            nodeRef = self.__findNode(eRef)
 
             if nodeRef != None:
                 nodeRef.setElement(element)
