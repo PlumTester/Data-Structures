@@ -52,7 +52,7 @@ class DoublyLinkedList:
         pass
         
     def toString(self):
-        return "ah ha test!!"
+        return "ah ha asdf!!"
 
     def size(self):
         return 2
