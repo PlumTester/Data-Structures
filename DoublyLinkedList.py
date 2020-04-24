@@ -45,6 +45,7 @@ class Node:
 class DoublyLinkedList:
 
     def __init__(self):
+        print("creating Doubly Linked List")
         pass
 
     def __del__(self):
@@ -54,7 +55,7 @@ class DoublyLinkedList:
         return "ah ha!"
 
     def size(self):
-        pass
+        return 2
 
     def isEmpty(self):
         pass
