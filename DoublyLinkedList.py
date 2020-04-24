@@ -2,12 +2,24 @@
 class Node:
 
     def __init__(self, element):
+        print("creating new node with element {0}".format(element))
         self.__element = element
         self.__next = None
         self.__prev = None
 
     def __del__(self):
-        pass
+
+        e = self.__element
+        n = None
+        p = None
+
+        if self.__next != None:
+            n = self.__next
+        
+        if self.__prev != None:
+            p = self.__prev
+        
+        print("deleting node with element {0}, next {1}, and prev {2}".format(e, n, p))
 
     def __str__(self):
         pass
