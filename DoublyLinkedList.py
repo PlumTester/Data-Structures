@@ -49,13 +49,14 @@ class DoublyLinkedList:
         pass
 
     def __del__(self):
+        print("destroying Doubly Linked List")
         pass
         
     def toString(self):
-        return "ah ha asdf!!"
+        pass
 
     def size(self):
-        return 2
+        pass
 
     def isEmpty(self):
         pass
@@ -64,6 +65,24 @@ class DoublyLinkedList:
         pass
 
     def last(self):
+        pass
+
+    def before(self, element):
+        pass
+
+    def after(self, element):
+        pass
+
+    def setElement(self, eRef, element):
+        pass
+
+    def remove(self, element):
+        pass
+
+    def addAfter(self, eRef, element):
+        pass
+
+    def addBefore(self, eRef, element):
         pass
 
 
