@@ -21,6 +21,10 @@ class Node:
     def getValue(self):
         return self.__value
 
+    # allows for LLBinaryTree toString function to work
+    def getElement(self):
+        self.getValue()
+
     def setValue(self, value):
         self.__value = value
 
