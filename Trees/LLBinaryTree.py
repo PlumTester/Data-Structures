@@ -41,7 +41,7 @@ class Position:
     def setLeft(self, p):
         self.__left = p
         if p != None:
-            p.parent = self
+            p.__parent = self
 
     def getRight(self):
         return self.__right
@@ -49,7 +49,7 @@ class Position:
     def setRight(self, p):
         self.__right = p
         if p != None:
-            p.parent = self
+            p.__parent = self
 
     def getSibling(self):
         if self.__parent.__right == self:
@@ -251,8 +251,6 @@ class Tree:
             while node != None:
                 stack.addFirst(node)
                 node = node.getLeft()
-
-            # node = stack.removeFirst()
 
             if node == None and not stack.isEmpty():
                 node = stack.removeFirst()
